@@ -1,0 +1,83 @@
+.card:hover,
+.card:focus,
+.card:active {
+  color: black;
+  border-color: #fe4e50;
+}
+
+.FormGroup {
+  line-height: 20%;
+}
+
+.card-print {
+  margin-bottom: -15px;
+  font-size: 20px;
+}
+.card-update {
+  margin-bottom: 5px;
+}
+
+// table{
+//   border-spacing:0;
+// }
+
+// tr:first-of-type{
+//   background:transparent;
+//   }
+
+// td:nth-child(odd){
+//   font-weight:bold;
+// }
+
+// th,td{
+//   padding:5px;
+// }
+
+
+
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .headtable {
+    background-color: #ffc000;
+  }
+  .tableAmount{
+    margin-top: -20px;
+  }
+
+  table.menu {
+    width: auto;
+    float: right;
+  }
+  .table td, .table th { 
+    background-color: transparent !important; 
+    border-width: 0px;
+  }
+  td:nth-child(odd){
+    font-weight:bold;
+  }
+}
+
+@media print {
+  .page-break {
+    display: block;
+    // page-break-before: always;
+    page-break-after: always;
+  }
+}
+
+@page {
+  size: 210mm 297mm;
+  margin: 10px;
+}
